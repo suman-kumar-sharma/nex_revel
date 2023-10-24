@@ -1,0 +1,64 @@
+/* Base styles for the navigation bar */
+.navbar {
+    background: #25172ce8;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    margin-left: 1%; /* Add margin to the left side */
+  }
+  
+  .logo {
+    width: 50px; /* Set the width of your logo as needed */
+  }
+  .right{
+    margin-right: 10%;
+  }
+  
+  .right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .right li {
+    margin-right: 25px; /* Add margin to the right side of navigation items */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Media query for screens with a maximum width of 768px (typical for mobile) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  
+    .left {
+      margin-bottom: 10px; /* Add margin to the bottom of the logo on mobile */
+    }
+  
+    .right {
+      margin-top: 10px; /* Add margin to the top of the navigation items on mobile */
+    }
+  
+    .logo {
+      width: 100px; /* Adjust the width of the logo for mobile screens */
+    }
+  
+    .right ul {
+      flex-direction: column; /* Stack navigation items vertically on mobile */
+    }
+  
+    .right li {
+      margin-right: 0; /* Remove right margin for mobile */
+      margin-bottom: 5px; /* Add margin between navigation items on mobile */
+    }
+  }
+  
